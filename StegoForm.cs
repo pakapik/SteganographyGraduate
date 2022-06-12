@@ -25,11 +25,4 @@ namespace SteganographyGraduate
             tabPage_check.Controls.Add(checkView);
         }
     }
-
-   
-
-    public interface IService
-    {
-        void Run();
-    }
 }

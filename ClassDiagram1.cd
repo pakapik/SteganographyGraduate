@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SteganographyGraduate.BitmapExtensions" Collapsed="true">
+    <Position X="4" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>BitmapExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.IoCContainer" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAEAAAAAAAAAAAAAAAABAAAEAAQAAAAAAAAAA=</HashCode>
+      <FileName>IoCContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.MarkingAvailabilityInformation" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>MarkingAvailabilityInformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.MatrixExtensions" Collapsed="true">
+    <Position X="2.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAAgQAAA=</HashCode>
+      <FileName>MatrixExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.PixelExtensions" Collapsed="true">
+    <Position X="5.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PixelExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.PutInIoCAttribute" Collapsed="true">
+    <Position X="7.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PutInIoCAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.StegoForm" Collapsed="true">
+    <Position X="2.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACgAAAAAAQCAAABCAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>StegoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.UnsafeBitmap" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhQBAABSAAAAAACAgAgEAAABAAAAECAAAAEAAAAAA=</HashCode>
+      <FileName>UnsafeBitmap.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Analyzers.AnalyzerBase" Collapsed="true">
+    <Position X="2.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACIEAEAAAAAAAAAIAAAAAAAAAAAAAAgCAAA=</HashCode>
+      <FileName>Models\Analyzers\AnalyzerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Analyzers.ChiSquareAnalyzer" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="SteganographyGraduate.Models.Analyzers.AnalyzerBase" FixedFromPoint="true">
+      <Path>
+        <Point X="3.75" Y="2.312" />
+        <Point X="4.125" Y="2.312" />
+        <Point X="4.125" Y="3.096" />
+        <Point X="3.75" Y="3.096" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAIABAAAEAAAAAAAIIAAAUAAQAAAAAA=</HashCode>
+      <FileName>Models\Analyzers\ChiSquareAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Analyzers.RSAnalyzer" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="SteganographyGraduate.Models.Analyzers.AnalyzerBase" FixedFromPoint="true">
+      <Path>
+        <Point X="3.75" Y="2.312" />
+        <Point X="4.125" Y="2.312" />
+        <Point X="4.125" Y="3.846" />
+        <Point X="3.75" Y="3.846" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Analyzers\RSAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.CrypterBase" Collapsed="true">
+    <Position X="6" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEAAAEAAgCAEAEQAAAAAAAAAgAAAAAAAAAAAAAkChAA=</HashCode>
+      <FileName>Models\CrypterBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Decrypters.CJBDecrypter" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="SteganographyGraduate.Models.Decrypters.DecrypterBase" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="2.441" />
+        <Point X="8.25" Y="2.595" />
+        <Point X="7.346" Y="2.595" />
+        <Point X="7.346" Y="4.625" />
+        <Point X="7.5" Y="4.625" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAgAAAAAAAAAAAAAAAACAAAAAAAAAAAAAGAAA=</HashCode>
+      <FileName>Models\Decrypters\CJBDecrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Decrypters.DCTDecrypter" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAAQAABAAAAAAwIBAAACAAAAACAAAAAAgEACACIACAA=</HashCode>
+      <FileName>Models\Decrypters\DCTDecrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Decrypters.DecrypterBase" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="SteganographyGraduate.Models.CrypterBase" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="1.312" />
+        <Point X="6.75" Y="2.062" />
+        <Point X="7.5" Y="2.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Decrypters\DecrypterBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Decrypters.LSBDecrypter" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Decrypters\LSBDecrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Decrypters.RLBDecrypter" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Decrypters\RLBDecrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Encrypters.CJBEncrypter" Collapsed="true">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAIAgAAAAAAAAAAAIAAAAEAAAAABAAAAAAAEAAA=</HashCode>
+      <FileName>Models\Encrypters\CJBEncrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Encrypters.DCTEncrypter" Collapsed="true">
+    <Position X="4.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FQgAIEBAEQCABwgBAAgAAAAAAEAAAAAAAAAAACAAABA=</HashCode>
+      <FileName>Models\Encrypters\DCTEncrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Encrypters.EncrypterBase" Collapsed="true">
+    <Position X="4.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="SteganographyGraduate.Models.CrypterBase" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="1.312" />
+        <Point X="6.75" Y="2.062" />
+        <Point X="6" Y="2.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAIAQAAA=</HashCode>
+      <FileName>Models\Encrypters\EncrypterBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Encrypters.LSBEncrypter" Collapsed="true">
+    <Position X="4.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Encrypters\LSBEncrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Models.Encrypters.RLBEncrypter" Collapsed="true">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <InheritanceLine Type="SteganographyGraduate.Models.Encrypters.EncrypterBase" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="2.441" />
+        <Point X="5.25" Y="2.657" />
+        <Point X="4.346" Y="2.657" />
+        <Point X="4.346" Y="3.125" />
+        <Point X="4.5" Y="3.125" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Models\Encrypters\RLBEncrypter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SteganographyGraduate.Presenters.AnylizePresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAgAAAAAAAAIQgCACAAAAAAYAA=</HashCode>
+      <FileName>Presenters\AnylizePresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Presenters.DecryptPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABGAAAAAAAQAgAAAAAAAAIQACACAAAAgAYAA=</HashCode>
+      <FileName>Presenters\DecryptPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Presenters.EncryptPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAABAAIAAAAAQAAAAAAAAAAIwAAACAAAAAAYAI=</HashCode>
+      <FileName>Presenters\EncryptPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Views.AnalyzerViewUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAIBQkRCgLDAAEBEagAAADgAQEAQABAgDIBBBhoAo=</HashCode>
+      <FileName>Views\AnalyzeViewUserControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SteganographyGraduate.Views.CrypterViewUserControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAIBQkRCgLDBAEBEagAAADAAQAEQABAgDIBBBhoAo=</HashCode>
+      <FileName>Views\CrypterViewUserControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="SteganographyGraduate.Pixel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAIgAAAAACAEAAQA=</HashCode>
+      <FileName>Pixel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Interface Name="SteganographyGraduate.Models.Analyzers.IAnalyzer" Collapsed="true">
+    <Position X="2.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Analyzers\IAnalyzer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SteganographyGraduate.Models.Decrypters.IDecrypter" Collapsed="true">
+    <Position X="7.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Decrypters\IDecrypter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SteganographyGraduate.Models.Encrypters.IEncrypter" Collapsed="true">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Encrypters\IEncrypter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SteganographyGraduate.Presenters.IPresenter" Collapsed="true">
+    <Position X="6" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAIQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Presenters\IPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SteganographyGraduate.Views.IView" Collapsed="true">
+    <Position X="2.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAgBAgCAAAEBEYgAAAAAAAAAAAAAgBABBBBIAI=</HashCode>
+      <FileName>Views\IView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

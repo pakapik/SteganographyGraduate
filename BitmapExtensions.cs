@@ -8,29 +8,15 @@ using System.Threading.Tasks;
 
 namespace SteganographyGraduate
 {
-    public struct Pixel : IEquatable<Pixel>
+    public static class BitmapExtensions
     {
-        public byte R;
-        public byte G;
-        public byte B;
+        public static Color[,] GetPixelsEx(this Bitmap bmp) => ProcessBitmap(bmp, pxl => Color.FromArgb(pxl.B, pxl.G, pxl.R));
 
-        public bool Equals(Pixel other) => R == other.R && G == other.G && B == other.B;
-
-        public override string ToString() => $"R: {R}, G: {G}, B: {B}";
-
-        public static implicit operator Pixel(Color color) => new Pixel { R = color.R, G = color.G, B = color.B };       
-    }
-
-    public static class BitmapHelper
-    {
-        public static Color[,] GetPixelsEx(this Bitmap bmp) => ProcessBitmap(bmp, pxl => Color.FromArgb(pxl.R, pxl.G, pxl.B));
-
-        public static float[,] GetBrightnessEx(this Bitmap bmp) => ProcessBitmap(bmp, pxl => Color.FromArgb(pxl.R, pxl.G, pxl.B).GetBrightness()); 
+        public static float[,] GetBrightnessEx(this Bitmap bmp) => ProcessBitmap(bmp, pxl => Color.FromArgb(pxl.B, pxl.G, pxl.R).GetBrightness()); 
         
         public static unsafe T[,] ProcessBitmap<T>(this Bitmap bitmap, Func<Pixel, T> func)
         {
-            var lockBits = bitmap.LockBits(new Rectangle(0, 
-                                                              0,
+            var lockBits = bitmap.LockBits(new Rectangle(0, 0,
                                                               bitmap.Width, 
                                                               bitmap.Height),
                                            ImageLockMode.ReadOnly,
@@ -54,6 +40,7 @@ namespace SteganographyGraduate
                     result[i, j] = func(*pixel);
                     ptr += pixelSize;
                 }
+
                 ptr += padding;
             }
 
@@ -65,8 +52,7 @@ namespace SteganographyGraduate
 
         public static unsafe void SetPixelEx(this Bitmap bitmap, Color[,] colors)
         {
-            var lockBits = bitmap.LockBits(new Rectangle(0,
-                                                              0,
+            var lockBits = bitmap.LockBits(new Rectangle(0, 0,
                                                               bitmap.Width,
                                                               bitmap.Height),
                                            ImageLockMode.ReadOnly,
@@ -86,10 +72,10 @@ namespace SteganographyGraduate
             {
                 for (var j = 0; j < width; j++)
                 {
-                    var pixel = (Pixel*)ptr;
                     result[i, j] = colors[i, j];
                     ptr += pixelSize;
                 }
+
                 ptr += padding;
             }
 

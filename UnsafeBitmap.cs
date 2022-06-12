@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing.Imaging;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing.Imaging;
 
 namespace SteganographyGraduate
 {
-    public unsafe class UnsafeBitmap
+    public unsafe class UnsafeBitmap : IDisposable
     {
         private int _width;
         private BitmapData _bitmapData = null;
@@ -32,9 +28,15 @@ namespace SteganographyGraduate
 
         public UnsafeBitmap(string path) => _bitmap = new Bitmap(path);
 
-        public UnsafeBitmap(int width, int height) => _bitmap = new Bitmap(width, height, PixelFormat.Format24bppRgb);
+        public Pixel GetPixel(int x, int y) => *PixelAt(x, y);
 
-        public void Dispose() => _bitmap.Dispose();
+        public void SetPixel(int x, int y, Pixel color)
+        {
+            Pixel* pixel = PixelAt(x, y);
+            *pixel = color;
+        }
+
+        private Pixel* PixelAt(int x, int y) => (Pixel*)(_pBase + (y * _width) + (x * _sizeOfPixelData));
 
         public void LockBitmap()
         {
@@ -64,15 +66,11 @@ namespace SteganographyGraduate
             _pBase = null;
         }
 
-        public Pixel GetPixel(int x, int y) => *PixelAt(x, y);
-
-        public void SetPixel(int x, int y, Pixel color)
+        public void Dispose()
         {
-            Pixel* pixel = PixelAt(x, y);
-            *pixel = color;
+            UnlockBitmap();
+            _bitmap.Dispose();
         }
-
-        private Pixel* PixelAt(int x, int y) => (Pixel*)(_pBase + (y * _width) + (x * _sizeOfPixelData));
     }
 }
 

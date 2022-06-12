@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteganographyGraduate", "SteganographyGraduate.csproj", "{A5C25CF4-68CA-4C04-85C1-CCCE3F4FF615}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{E26A9ED3-0328-44BA-AB2E-5833264F3AF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{A5C25CF4-68CA-4C04-85C1-CCCE3F4FF615}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5C25CF4-68CA-4C04-85C1-CCCE3F4FF615}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5C25CF4-68CA-4C04-85C1-CCCE3F4FF615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E26A9ED3-0328-44BA-AB2E-5833264F3AF6}.Debug|Any CPU.ActiveCfg = Debug
+		{E26A9ED3-0328-44BA-AB2E-5833264F3AF6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

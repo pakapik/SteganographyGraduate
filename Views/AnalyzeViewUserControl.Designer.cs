@@ -1,6 +1,6 @@
-﻿namespace SteganographyGraduate
+﻿namespace SteganographyGraduate.Views
 {
-    partial class MainViewUserControl
+    partial class AnalyzerViewUserControl
     {
         /// <summary> 
         /// Обязательная переменная конструктора.
@@ -38,10 +38,10 @@
             this.btn_openTxtFileDialog = new System.Windows.Forms.Button();
             this.btn_openImgFileDialog = new System.Windows.Forms.Button();
             this.panel_choice = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.rBtn_LSB = new System.Windows.Forms.RadioButton();
-            this.rBtn_SimpleRandom = new System.Windows.Forms.RadioButton();
-            this.rBtn_Simple = new System.Windows.Forms.RadioButton();
+            this.rBtn_DCT = new System.Windows.Forms.RadioButton();
+            this.rBtn_CJB = new System.Windows.Forms.RadioButton();
+            this.rBtn_RS = new System.Windows.Forms.RadioButton();
+            this.rBtn_ChiSquare = new System.Windows.Forms.RadioButton();
             this.panel_choice.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,65 +129,65 @@
             // 
             // panel_choice
             // 
-            this.panel_choice.Controls.Add(this.radioButton4);
-            this.panel_choice.Controls.Add(this.rBtn_LSB);
-            this.panel_choice.Controls.Add(this.rBtn_SimpleRandom);
-            this.panel_choice.Controls.Add(this.rBtn_Simple);
+            this.panel_choice.Controls.Add(this.rBtn_DCT);
+            this.panel_choice.Controls.Add(this.rBtn_CJB);
+            this.panel_choice.Controls.Add(this.rBtn_RS);
+            this.panel_choice.Controls.Add(this.rBtn_ChiSquare);
             this.panel_choice.Location = new System.Drawing.Point(6, 3);
             this.panel_choice.Name = "panel_choice";
             this.panel_choice.Size = new System.Drawing.Size(382, 136);
             this.panel_choice.TabIndex = 20;
             // 
-            // radioButton4
+            // rBtn_DCT
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(4, 83);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            this.rBtn_DCT.AutoSize = true;
+            this.rBtn_DCT.Location = new System.Drawing.Point(4, 83);
+            this.rBtn_DCT.Name = "rBtn_DCT";
+            this.rBtn_DCT.Size = new System.Drawing.Size(85, 17);
+            this.rBtn_DCT.TabIndex = 3;
+            this.rBtn_DCT.TabStop = true;
+            this.rBtn_DCT.Text = "radioButton4";
+            this.rBtn_DCT.UseVisualStyleBackColor = true;
+            this.rBtn_DCT.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
             // 
-            // rBtn_LSB
+            // rBtn_CJB
             // 
-            this.rBtn_LSB.AutoSize = true;
-            this.rBtn_LSB.Location = new System.Drawing.Point(4, 60);
-            this.rBtn_LSB.Name = "rBtn_LSB";
-            this.rBtn_LSB.Size = new System.Drawing.Size(85, 17);
-            this.rBtn_LSB.TabIndex = 2;
-            this.rBtn_LSB.TabStop = true;
-            this.rBtn_LSB.Text = "radioButton3";
-            this.rBtn_LSB.UseVisualStyleBackColor = true;
-            this.rBtn_LSB.CheckedChanged += new System.EventHandler(this.rBtn_3_CheckedChanged);
+            this.rBtn_CJB.AutoSize = true;
+            this.rBtn_CJB.Location = new System.Drawing.Point(4, 60);
+            this.rBtn_CJB.Name = "rBtn_CJB";
+            this.rBtn_CJB.Size = new System.Drawing.Size(85, 17);
+            this.rBtn_CJB.TabIndex = 2;
+            this.rBtn_CJB.TabStop = true;
+            this.rBtn_CJB.Text = "radioButton3";
+            this.rBtn_CJB.UseVisualStyleBackColor = true;
+            this.rBtn_CJB.CheckedChanged += new System.EventHandler(this.rBtn_CJB_CheckedChanged);
             // 
-            // rBtn_SimpleRandom
+            // rBtn_RS
             // 
-            this.rBtn_SimpleRandom.AutoSize = true;
-            this.rBtn_SimpleRandom.Location = new System.Drawing.Point(4, 37);
-            this.rBtn_SimpleRandom.Name = "rBtn_SimpleRandom";
-            this.rBtn_SimpleRandom.Size = new System.Drawing.Size(85, 17);
-            this.rBtn_SimpleRandom.TabIndex = 1;
-            this.rBtn_SimpleRandom.TabStop = true;
-            this.rBtn_SimpleRandom.Text = "radioButton2";
-            this.rBtn_SimpleRandom.UseVisualStyleBackColor = true;
-            this.rBtn_SimpleRandom.CheckedChanged += new System.EventHandler(this.rBtn_SimpleRandom_CheckedChanged);
+            this.rBtn_RS.AutoSize = true;
+            this.rBtn_RS.Location = new System.Drawing.Point(4, 37);
+            this.rBtn_RS.Name = "rBtn_RS";
+            this.rBtn_RS.Size = new System.Drawing.Size(85, 17);
+            this.rBtn_RS.TabIndex = 1;
+            this.rBtn_RS.TabStop = true;
+            this.rBtn_RS.Text = "radioButton2";
+            this.rBtn_RS.UseVisualStyleBackColor = true;
+            this.rBtn_RS.CheckedChanged += new System.EventHandler(this.rBtn_LSB_CheckedChanged);
             // 
-            // rBtn_Simple
+            // rBtn_ChiSquare
             // 
-            this.rBtn_Simple.AutoSize = true;
-            this.rBtn_Simple.Checked = true;
-            this.rBtn_Simple.Location = new System.Drawing.Point(4, 14);
-            this.rBtn_Simple.Name = "rBtn_Simple";
-            this.rBtn_Simple.Size = new System.Drawing.Size(85, 17);
-            this.rBtn_Simple.TabIndex = 0;
-            this.rBtn_Simple.TabStop = true;
-            this.rBtn_Simple.Text = "radioButton1";
-            this.rBtn_Simple.UseVisualStyleBackColor = true;
-            this.rBtn_Simple.CheckedChanged += new System.EventHandler(this.rBtn_Simple_CheckedChanged);
+            this.rBtn_ChiSquare.AutoSize = true;
+            this.rBtn_ChiSquare.Checked = true;
+            this.rBtn_ChiSquare.Location = new System.Drawing.Point(4, 14);
+            this.rBtn_ChiSquare.Name = "rBtn_ChiSquare";
+            this.rBtn_ChiSquare.Size = new System.Drawing.Size(85, 17);
+            this.rBtn_ChiSquare.TabIndex = 0;
+            this.rBtn_ChiSquare.TabStop = true;
+            this.rBtn_ChiSquare.Text = "radioButton1";
+            this.rBtn_ChiSquare.UseVisualStyleBackColor = true;
+            this.rBtn_ChiSquare.CheckedChanged += new System.EventHandler(this.rBtn_Simple_CheckedChanged);
             // 
-            // MainViewUserControl
+            // AnalyzerViewUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -201,7 +201,7 @@
             this.Controls.Add(this.tb_imgPath);
             this.Controls.Add(this.btn_openTxtFileDialog);
             this.Controls.Add(this.btn_openImgFileDialog);
-            this.Name = "MainViewUserControl";
+            this.Name = "AnalyzerViewUserControl";
             this.Size = new System.Drawing.Size(493, 391);
             this.panel_choice.ResumeLayout(false);
             this.panel_choice.PerformLayout();
@@ -222,9 +222,9 @@
         private System.Windows.Forms.Button btn_openTxtFileDialog;
         private System.Windows.Forms.Button btn_openImgFileDialog;
         private System.Windows.Forms.Panel panel_choice;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton rBtn_LSB;
-        private System.Windows.Forms.RadioButton rBtn_SimpleRandom;
-        private System.Windows.Forms.RadioButton rBtn_Simple;
+        private System.Windows.Forms.RadioButton rBtn_DCT;
+        private System.Windows.Forms.RadioButton rBtn_CJB;
+        private System.Windows.Forms.RadioButton rBtn_RS;
+        private System.Windows.Forms.RadioButton rBtn_ChiSquare;
     }
 }

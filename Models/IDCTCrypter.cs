@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SteganographyGraduate
+namespace SteganographyGraduate.Models
 {
-   
+    public interface IDCTCrypter { }
 }
